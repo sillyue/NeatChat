@@ -88,7 +88,7 @@ async function request(req: NextRequest) {
 
             // not undefined and is false
             if (
-                isModelAvailableInServer(
+                !isModelAvailableInServer(
                     serverConfig.customModels,
                     jsonBody?.model as string,
                     ServiceProvider.Wenxin as string,
